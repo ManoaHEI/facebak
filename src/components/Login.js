@@ -23,9 +23,9 @@ export default function Login() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
         localStorage.removeItem("token")
         localStorage.setItem("token" , userLogin(formData));
-        alert(localStorage.getItem("token"))
 
         setFormData({
             username: 'slindemann0',
